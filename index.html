@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cenorê Confeitaria artesanal. Doces, bolos e bombons feitos com cuidado.">
+    <title>Cenorê | Confeitaria artesanal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+    
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+            <a class="logo" href="#inicio" aria-label="Cenorê - página inicial">
+                <img src="imagens/logo.webp" alt="Logo da Cenorê">
+            </a>
+
+            <div class="redes">
+                <a href="https://wa.me/5511963407528" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Cenorê pelo WhatsApp">
+                    <i class="fi fi-brands-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/cenoreconfeitaria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Cenorê">
+                    <i class="fi fi-brands-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- INÍCIO / APRESENTAÇÃO -->
+        <section class="inicio" id="inicio">
+            <section class="hero">
+                <picture class="hero-img">
+                    <img src="imagens/menu hero.webp" alt="Montinho de pão de mel">
+                    <figcaption>Texturas que derretem e sabores que marcam!</figcaption>
+                </picture>
+            </section>
+
+            <section class="pedido">
+                <a href="https://wa.me/5511963407528" class="botao-pedido" target="_blank" rel="noopener noreferrer">Faça seu pedido!</a>
+            </section>
+
+            <!-- CATEGORIAS -->
+            <nav class="categorias" aria-label="Categorias do catálogo">
+                <a class="categoria" href="#doces-gourmet">
+                    <img src="imagens/menu doces gourmets.webp" alt="Doces gourmet">
+                    <h5>Gourmets</h5>
+                </a>
+                <a class="categoria" href="#bolos">
+                    <img src="imagens/menu bolos.webp" alt="Bolos artesanais">
+                    <h5>Bolos</h5>
+                </a>
+                <a class="categoria" href="#bombons">
+                    <img src="imagens/menu bombons.webp" alt="Bombons de chocolate">
+                    <h5>Bombons</h5>
+                </a>
+            </nav>
+
+            <!-- CAMPO DE PESQUISA (visual; precisa de JavaScript para filtrar produtos) -->
+            <section class="pesquisa" role="search">
+                <label class="sr-only" for="buscar-produtos">Buscar produtos</label>
+                <i class="fi fi-rr-search" aria-hidden="true"></i>
+                <input id="buscar-produtos" type="search" placeholder="Buscar produtos...">
+            </section>
+        </section>
+    </main>
+    
+        <!-- CATÁLOGO: DOCES GOURMET E BOLOS -->
+        <section class="doces_g" id="doces-gourmet">
+            <h2>Doces Gourmet</h2>
+
+            <div class="box">
+                <article class="caixa">
+                    <picture><img src="imagens/doce g 1.webp" alt="Brigadeiros"></picture>
+                    <div>
+                        <h3>Brigadeiro</h3>
+                        <ul>
+                            <li>Brigadeiro gourmet</li>
+                            <li>Brigadeiro de café</li>
+                            <li>Brigadeiro de limão</li>
+                            <li>Siciliano</li>
+                            <li>Beijinho</li>
+                            <li>Ninho</li>
+                            <li>Ninho com uva</li>
+                            <li>Trufa de tamarã</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="caixa invertido">
+                    <picture><img src="imagens/doce g 2.webp" alt="Tortinhas"></picture>
+                    <div>
+                        <h3 class="oposto">Tortinha</h3>
+                        <ul>
+                            <li>Morango</li>
+                            <li>Limão</li>
+                            <li>Banoffe</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="caixa">
+                    <picture><img src="imagens/doce g 3.webp" alt="Cupcakes"></picture>
+                    <div>
+                        <h3>Cup Cake</h3>
+                        <ul>
+                            <li>Chocolate com brigadeiro</li>
+                            <li>Churros</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="caixa invertido">
+                    <picture><img src="imagens/doce g 4.webp" alt="Pudim gourmet"></picture>
+                    <div>
+                        <h3 class="oposto">Pudim Gourmet</h3>
+                        <p>Leite condensado</p>
+                        <p>Café</p>
+                    </div>
+                </article>
+
+                <article class="caixa">
+                    <picture><img src="imagens/doce g 5.webp" alt="Éclair"></picture>
+                    <div>
+                        <h3>Éclair</h3>
+                        <p>Delícia de massa choux leve e crocante, recheada com suave creme de chocolate.</p>
+                    </div>
+                </article>
+
+                <article class="caixa invertido">
+                    <picture><img src="imagens/doce g 6.webp" alt="Brownie"></picture>
+                    <div>
+                        <h3 class="oposto">Brownie</h3>
+                        <ul>
+                            <li>Tradicional</li>
+                            <li>Café</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="doces_g" id="bolos">
+            <h2>Bolos</h2>
+
+            <div class="box">
+                <article class="caixa">
+                    <picture><img src="imagens/bolo 1.webp" alt="Bolo de nozes"></picture>
+                    <div>
+                        <h3>Nozes</h3>
+                        <p>Massa branca artesanal com creme belga, nozes e ganache de chocolate. Cremoso, sofisticado e irresistível.</p>
+                    </div>
+                </article>
+
+                <article class="caixa invertido">
+                    <picture><img src="imagens/bolo 2.webp" alt="Bolo de prestígio"></picture>
+                    <div>
+                        <h3 class="oposto">Prestígio</h3>
+                        <p>Massa chiffon de chocolate, recheio cremoso de prestígio, cobertura de brigadeiro, coco e beijinhos. Intenso, cremoso e irresistível.</p>
+                    </div>
+                </article>
+
+                <article class="caixa">
+                    <picture><img src="imagens/bolo 3.webp" alt="Bolo de frutas vermelhas"></picture>
+                    <div>
+                        <h3>Frutas Vermelhas</h3>
+                        <p>Massa branca com creme belga, geleia artesanal de frutas vermelhas e cobertura de chantilly. Leve e delicado.</p>
+                    </div>
+                </article>
+
+                <article class="caixa invertido">
+                    <picture><img src="imagens/bolo 4.webp" alt="Bolo de frutas amarelas"></picture>
+                    <div>
+                        <h3 class="oposto">Frutas Amarelas</h3>
+                        <p>Massa branca com creme belga e geleia artesanal de manga, abacaxi e maracujá. Tropical, leve e refrescante.</p>
+                    </div>
+                </article>
+
+                <article class="caixa">
+                    <picture><img src="imagens/bolo 5.webp" alt="Bolo de cenoura com brigadeiro"></picture>
+                    <div>
+                        <h3>Cenoura com brigadeiro</h3>
+                        <p>Massa artesanal de cenoura recheada e cobertura com brigadeiro gourmet.</p>
+                    </div>
+                </article>
+
+                <article class="caixa invertido">
+                    <picture><img src="imagens/bolo 6.webp" alt="Bolo de doce de leite"></picture>
+                    <div>
+                        <h3 class="oposto">Doce de Leite</h3>
+                        <p>Massa chiffon branca, com recheio de doce de leite artesanal e ameixas secas. Coberto com doce de leite.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-bombons" id="bombons">
+            <h2>Bombons</h2>
+ 
+            <div class="box">
+                <article class="caixa">           
+                    <picture><img src="imagens/bombom 1.webp" alt="Pão de cenoura"></picture>
+                    <div>
+                        <h3>Pão de Cenoura</h3>
+                        <p>Massa de cenoura, recheada com brigadeiro gourmet e coberto com chocolate.</p>
+                    </div>
+                </article>
+
+                <article class="caixa invertido">
+                    <picture><img src="imagens/bombom 2.webp" alt="Pão de Mel"></picture>
+                    <div>
+                        <h3 class="oposto">Pão de Mel</h3>
+                        <p>Massa artesanal de pão de mel, recheada com doce de leite e coberto com chocolate meio amargo.</p>
+                    </div>
+                </article>
+
+                <article class="caixa">
+                    <picture><img src="imagens/bombom 3.webp" alt="Pistache"></picture>
+                    <div>
+                        <h3>Pistache</h3>
+                        <p>Bombom artesanal de cenoura com chocolate meio amargo, bolo de cenoura e brigadeiro gourmet de pistache.</p>
+                    </div>
+                </article>
+
+                <article class="caixa invertido">
+                    <picture><img src="imagens/bombom 4.webp" alt="Limão"></picture>
+                    <div>
+                        <h3 class="oposto">Limão</h3>
+                        <p>Bombom artesanal de cenoura com chocolate branco, bolo artesanal e brigadeiro gourmet de limão siciliano ou chocolate branco.</p>
+                    </div>
+                </article>
+
+                <article class="caixa">
+                    <picture><img src="imagens/bombom 5.webp" alt="Prestígio"></picture>
+                    <div>
+                        <h3>Prestígio</h3>
+                        <p>Bombom artesanal de chocolate meio amargo com recheio cremoso de prestígio e massa chiffon de chocolate.</p>
+                    </div>
+                </article>
+
+                <article class="caixa invertido">
+                    <picture><img src="imagens/bombom 6.webp" alt="Morango"></picture>
+                    <div>
+                        <h3 class="oposto">Morango</h3>
+                        <p>Casquinha de chocolate meio amargo, com recheio de massa chiffon de chocolate, brigadeiro gourmet e geleia artesanal de morango.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- QUEM SOMOS -->
+        <section class="quem_somos" id="quemsomos">
+            <h2 href="#quemsomos">Quem Somos?</h2>
+            <div class="prod_img">
+                <img src="imagens/quem somos 1.webp" alt="Registro da confeitaria">
+            </div>
+            <div class="paragrafo">
+                <p class="textino">
+                    A Cenorê nasceu da evolução da antiga Thafarelli Confeitaria, criada pelas irmãs Thalita e Karina a partir da experiência com confeitaria artesanal.
+                    <br><br>
+                    Em 2017, Thalita iniciou sua atuação profissional, tendo como destaque o Pão de Cenoura recheado com brigadeiro gourmet, que inspirou o nome Cenorê.
+                    <br><br>
+                    Com o crescimento do negócio, a marca passou por um reposicionamento, mantendo sua essência e proximidade com os clientes. Em 2025, o projeto foi retomado com foco em aperfeiçoamento e expansão.
+                    <br><br>
+                    Atualmente, a Cenorê atende principalmente Barueri, Santana de Parnaíba, São Paulo e ABC, tendo como pilares a produção artesanal, qualidade e cuidado em cada detalhe.
+                </p>
+            </div>
+            <div class="prod_img">
+                <img src="imagens/quem somos 2.webp" alt="Registro da confeitaria">
+            </div>
+        </section>
+
+        <!-- LOCALIZAÇÃO -->
+        <section id="localizacao" class="secao-localizacao">
+            <h2 class="titulo">Onde estamos localizados</h2>
+            <div class="local">
+                <picture class="local-img">
+                    <img src="imagens/localização.webp" alt="As duas fundadoras expondo em uma feira">
+                </picture>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3453.1783458653604!2d-46.892046856910554!3d-23.513971077432362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03e63bc7a06d%3A0xc14462a7d6d04032!2sITB%20Bras%C3%ADlio%20Flores%20de%20Azevedo%20(FIEB)!5e0!3m2!1spt-BR!2sbr!4v1794445504068!5m2!1spt-BR!2sbr"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        title="Localização da Cenorê no Google Maps">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERGUNTAS FREQUENTES -->
+        <section id="perguntas-frequentes" class="secao-faq" href="#perguntas-frequentes">
+            <h2 class="titulo">Perguntas Frequentes</h2>
+            <div class="perguntas">
+                <article class="pergunta">
+                    <h4>Vocês fazem entrega?</h4>
+                    <p>Sim! Consulte as regiões atendidas, horários e valores de entrega.</p>
+                </article>
+                <article class="pergunta">
+                    <h4>É possível escolher mais de um recheio?</h4>
+                    <p>Sim, dependendo do tamanho e do modelo do bolo, é possível combinar diferentes sabores.</p>
+                </article>
+                <article class="pergunta">
+                    <h4>Vocês trabalham com kits para festas?</h4>
+                    <p>Sim! Podemos montar opções com bolos e doces de acordo com a quantidade e o tipo de evento.</p>
+                </article>
+                <article class="pergunta">
+                    <h4>Posso retirar meu pedido na loja?</h4>
+                    <p>Sim. A retirada pode ser feita no horário combinado no momento da encomenda.</p>
+                </article>
+                <article class="pergunta">
+                    <h4>Com quanto tempo de antecedência devo fazer meu pedido?</h4>
+                    <p>Recomendamos antecedência, especialmente para bolos personalizados e grandes encomendas. Pedidos de última hora dependem da disponibilidade.</p>
+                </article>
+            </div>
+        </section>
+
+<!-- FALE CONOSCO -->
+    <section class="falecn" id="fale-conosco">
+            <h2 class="titulo">Fale conosco</h2>
+                <div class="cont">
+                <section class="whats">
+                    <a href="https://wa.me/5511963407528" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Cenorê pelo WhatsApp">
+                    <i class="fi fi-brands-whatsapp-circle"></i>
+                </a>
+                <ul>
+                    <li>(11) 98151-1804</li>
+                    <li>(11) 99605-0105</li>
+                </ul>
+                </section>
+                <section class="insta">
+                <a href="https://www.instagram.com/cenoreconfeitaria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Cenorê">
+                    <i class="fi fi-brands-instagram-circle"></i>
+                </a>
+                <p>@cenoreconfeitaria</p>
+                </section>
+            </div>
+    </section>
+
+    <section class="feedback">
+            <h2 class="titulo">feedback</h2>
+            <section class="paragrafo">
+                <p class="data-feedback"><b>Mensagem recebida (23 de abril de 2025):</b></p>
+        <blockquote>
+        "Adorei o bolinho, uma das melhores coisas que comi nos últimos dias!! Estava perfeito, não sei se era só edição de páscoa, mas se sim, espero que tenha mais vezes.""
+        </blockquote>
+        <p class="resposta">R: Fico mutio feliz, não era só edição pascoa 😊</Ri:a></p>
+
+        <p class="data-feedback"><b>Mensagem recebida (03 de Maio de 2025):</b>
+        <blockquote> "Achei o conjunto de bolos o doces divinos, são deliciosos estão de parabéns" </p>
+        </blockquote>
+        <p class="resposta">  R: Nós que agradecemos pela preferencia, obrigada pelo feedback! 💗 </Ri:a> </p>
+      </div>
+            </section>
+    </section>
+<!-- ORÇAMENTO -->
+    <section class="conteudo" id="orcamento">
+      <div class="titulo-linha" >
+        <h2 class="titulo">Solicitação de Orçamento</h2>
+        <a class="whatorcamento" href="https://wa.me/5511963407528" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Cenorê pelo WhatsApp"><i class="fi fi-brands-whatsapp-circle"></i></a>
+      </div>
+
+      <form id="form-orcamento">
+        <div class="campo-linha">
+          <label for="data">Data Entrega:</label>
+          <input id="data" name="data" type="date" required>
+        </div>
+
+        <div class="campo-linha">
+          <label for="horario">Horário Entrega:</label>
+          <input id="horario" name="horario" type="time" required>
+        </div>
+
+        <div class="campo-pedido" id="pedido">
+          <label for="descricao">Pedido:</label>
+          <textarea id="descricao" name="descricao" required placeholder="Descreva os doces, bolo, quantidade, tamanho, sabores e outros detalhes..."></textarea>
+        </div>
+
+        <p class="aviso">Orçamentos e cotações são respondidos no prazo de 24 horas úteis.</p>
+        <button class="botao-enviar" type="submit">Enviar pedido pelo WhatsApp</button>
+        <p class="mensagem" id="mensagem" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+
+<!-- MENU HAMBURGUER -->
+    <section class="container">
+    <footer>
+        <button
+            class="btn-menu"
+            id="abrirMenu"
+            aria-label="Abrir menu"
+            aria-controls="menuLateral"
+            aria-expanded="false">
+            &#9776;
+        </button>
+       
+        <section>
+        <a class="ctafoot" href="https://wa.me/5511963407528" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Cenorê pelo WhatsApp">Faça seu pedido!</a>
+    </section>
+
+    </footer>
+
+    <!-- Fundo escuro -->
+    <section class="overlay" id="overlay"></section>
+    <!-- Menu lateral -->
+    <nav class="menu" id="menuLateral" aria-label="Menu principal"
+         aria-hidden="true" inert>
+        <section class="menu-topo">
+            <button class="btn-fechar"
+                    id="fecharMenu"
+                    aria-label="Fechar menu">
+                &times;
+            </button>
+        </section>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#doces-gourmet">Doces gourmet</a></li>
+            <li><a href="#bolos">Bolos</a></li>
+            <li><a href="#bombons">Bombons</a></li>
+            <li><a href="#quemsomos">Quem somos</a></li>
+            <li><a href="#perguntas-frequentes">Perguntas frequentes</a></li>
+            <li><a href="#fale-conosco">Fale conosco</a></li>
+            <li><a href="#orcamento">Orçamento</a></li>
+        </ul>
+    </nav>
+</section>
+
+<script>
+    const abrirMenu = document.getElementById("abrirMenu");
+    const fecharMenu = document.getElementById("fecharMenu");
+    const menu = document.getElementById("menuLateral");
+    const overlay = document.getElementById("overlay");
+
+    function abrir() {
+        menu.classList.add("aberto");
+        overlay.classList.add("visivel");
+
+        menu.inert = false;
+        menu.setAttribute("aria-hidden", "false");
+        abrirMenu.setAttribute("aria-expanded", "true");
+        fecharMenu.focus();
+    }
+
+    function fechar() {
+        menu.classList.remove("aberto");
+        overlay.classList.remove("visivel");
+
+        menu.inert = true;
+        menu.setAttribute("aria-hidden", "true");
+        abrirMenu.setAttribute("aria-expanded", "false");
+        abrirMenu.focus();
+    }
+
+    abrirMenu.addEventListener("click", abrir);
+    fecharMenu.addEventListener("click", fechar);
+    overlay.addEventListener("click", fechar);
+
+    menu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", fechar);
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && menu.classList.contains("aberto")) {
+            fechar();
+        }
+    });
+</script>
+    
+</body>
+</html>
